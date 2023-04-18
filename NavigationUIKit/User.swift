@@ -10,4 +10,6 @@ import Foundation
 struct User {
     var name = ""
     var surname = ""
+    var age = ""
+    var profession = ""
 }

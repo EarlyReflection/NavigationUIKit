@@ -9,18 +9,13 @@ import UIKit
 
 class ThirdViewController: UIViewController {
     
-    @IBOutlet weak var fullNameLabel: UILabel!
+    @IBOutlet weak var ageTF: UITextField!
     
     var user = User()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        fullNameLabel.text = """
-\(user.name)
-\(user.surname)
-"""
-        
+    @IBAction func nextPressed() {
+        user.age = ageTF.text ?? ""
     }
     
 

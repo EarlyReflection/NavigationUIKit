@@ -10,6 +10,7 @@ import UIKit
 class SecondViewController: UIViewController {
     
     @IBOutlet weak var fullNameLabel: UILabel!
+    
     var user = User()
     
     override func viewDidLoad() {
