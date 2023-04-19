@@ -12,12 +12,6 @@ class FourthViewController: UIViewController {
     
     var user = User()
     
-    
-    @IBAction func save() {
-        user.profession = professionTF.text ?? ""
-    }
-    
-    
     @IBAction func toFirstPressed() {
         user.profession = professionTF.text ?? ""
         performSegue(withIdentifier: "unwindToFirstVC", sender: self)

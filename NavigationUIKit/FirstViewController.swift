@@ -37,6 +37,9 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func unwindToFirstVC(segue: UIStoryboardSegue) {
+        nameTF.text = ""
+        surnameTF.text = ""
+
         guard let fourthVC = segue.source as? FourthViewController else { return }
         user = fourthVC.user
         fullDescription.text = """
