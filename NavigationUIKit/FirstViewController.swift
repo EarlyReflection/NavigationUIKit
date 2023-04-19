@@ -35,4 +35,14 @@ class FirstViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func unwindToFirstVC(segue: UIStoryboardSegue) {
+        guard let fourthVC = segue.source as? FourthViewController else { return }
+        user = fourthVC.user
+        fullDescription.text = """
+                user: \(user.name) \(user.surname)
+                age: \(user.age)
+                profession: \(user.profession)
+                """
+    }
 }

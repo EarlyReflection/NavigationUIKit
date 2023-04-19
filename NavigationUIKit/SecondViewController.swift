@@ -15,18 +15,12 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         fullNameLabel.text = """
 Hi,
 \(user.name)
 \(user.surname)
 """
     }
-    
-    @IBAction func nextPressed() {
-        performSegue(withIdentifier: "goToThird", sender: nil)
-    }
-    
     
     // MARK: - Navigation
     
